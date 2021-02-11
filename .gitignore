@@ -1,3 +1,6 @@
+test
+test.c
 lecture*
 section*
-!*.c
+!lecture*.c
+!section*.c
