@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "inttypes.h": "c",
-        "sched.h": "c"
+        "sched.h": "c",
+        "string.h": "c"
     }
 }

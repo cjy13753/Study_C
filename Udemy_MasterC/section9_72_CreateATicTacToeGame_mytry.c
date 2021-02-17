@@ -2,11 +2,10 @@
 
 /* 
 1. Display the current board
-2. Check if anyone has won
-2-1. Yes. Display who has won
-2-2. No. Display whose turn
-2-2-1. Player makes a selection
-2-2-2. go to 1
+2. Check if anyone has won (Yes: go to step 3, No: go to step 4)
+3. Yes. Display who has won. End.
+4. No. Display whose turn
+5. Player makes a selection. repeat from 1
 */
 
 void drawBoard(char boardArray[9]);
@@ -134,13 +133,14 @@ char makeMove(char boardArray[9])
 
 int checkForWin(char boardArray[9], int whoseTurn)
 {
-    int winningCases[7][3] = 
+    int winningCases[8][3] = 
     {
         {1, 2, 3},
         {1, 5, 9},
         {1, 4, 7},
         {2, 5, 8},
         {3, 5, 7},
+        {3, 6, 9},
         {4, 5, 6},
         {7, 8, 9}
     };
@@ -152,7 +152,7 @@ int checkForWin(char boardArray[9], int whoseTurn)
     else if (whoseTurn == -1)
         playerSymbol = 'X';
 
-    for (int i = 0, count = 0; i < 7; i++, count = 0)
+    for (int i = 0, count = 0; i < 8; i++, count = 0)
     {
         for (int j = 0; j < 3; j++)
         {
