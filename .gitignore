@@ -4,3 +4,4 @@ lecture*
 section*
 !lecture*.c
 !section*.c
+*.py
