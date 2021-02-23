@@ -13,7 +13,7 @@ int main()
     usertext = (char *) malloc(limit * sizeof(char));
     
     printf("%s", "What do you want to enter?: ");
-    scanf("%s", usertext);
+    scanf("%s", usertext); // Failed to include a check that confirms if malloc was properly executed or not
 
     printf("%s\n", usertext);
     
