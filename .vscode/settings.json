@@ -5,6 +5,7 @@
         "string.h": "c",
         "unistd.h": "c",
         "types.h": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "cstdlib": "c"
     }
 }
