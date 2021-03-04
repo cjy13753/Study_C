@@ -6,3 +6,5 @@ section*
 !section*.c
 *.py
 file.txt
+PracticeProblem*
+!PracticeProblem*.c
