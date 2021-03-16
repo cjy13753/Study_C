@@ -7,6 +7,7 @@
         "types.h": "c",
         "typeinfo": "c",
         "cstdlib": "c",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "fcntl.h": "c"
     }
 }
